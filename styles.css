@@ -1,0 +1,7 @@
+.app-name{
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px lightblue;
+  border-bottom: 2px solid black;
+  padding: 1rem;
+}
