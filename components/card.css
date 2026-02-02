@@ -16,11 +16,11 @@
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 .card:hover{
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.723);
-    border-color: rgba(212, 175, 55, 0.928);
+    box-shadow: 0 30px 60px #000000b8;
+    border-color: #d4af37ed;
 }
 .card h2{
-    border-bottom: 2px solid rgba(212, 175, 55, 0.6);
+    border-bottom: 2px solid #d4af3799;
     padding-bottom: 1em;
 }
 .card p{
@@ -32,4 +32,5 @@
   justify-content: start;
   gap: 0.5rem;
   flex-wrap: wrap;
+  padding-top: 5vh;
 }
