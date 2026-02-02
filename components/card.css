@@ -4,34 +4,27 @@
 
 .card{
     position: relative;
-    border: 2px solid black;
+    border: 3px solid rgba(212, 175, 55, 0.4);
     border-radius: 5px;
     max-width: 520px;
     text-align: center;
     padding: 1.5rem;
     margin: 2rem auto 2rem auto;
     max-width: 520px;
-    background-color: #e3edf9;
+    background-color: rgba(255, 255, 255, 0.949);
+    box-shadow: 0 20px 40px #00000059;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
-
-.bookmark{
-    position: absolute;
-    top: 0rem;
-    right: 0rem;
+.card:hover{
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.723);
+    border-color: rgba(212, 175, 55, 0.928);
 }
-
-.bookmark .img{
-    width: 5vh;
-    height: 5vh;
+.card h2{
+    border-bottom: 2px solid rgba(212, 175, 55, 0.6);
+    padding-bottom: 1em;
 }
-
-.question,.show-answer{
-  margin: 2rem 0 1rem;
-}
-.show-answer{
-    background-color: white;
-    border-radius: 10px;
-    padding: 0.5rem;
+.card p{
+    color: #374151;
 }
 
 .tags{

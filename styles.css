@@ -4,10 +4,11 @@
 @import url(components/navigation.css);
 @import url(global.css);
 
-.app-name{
-  font-size: 1.5rem;
-  text-align: center;
-  text-shadow: 2px 2px 2px lightblue;
-  border-bottom: 2px solid black;
-  padding: 1rem;
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(assets/image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+
 }
