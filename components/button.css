@@ -4,10 +4,12 @@
     right: -0.1rem;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    outline: none;
 }
 
-.bookmark:focus{
-    background: #0000007c;
+.bookmark:focus .img{
+    filter: opacity(3) drop-shadow(0 0 0 red);
 }
 
 .bookmark .img{
