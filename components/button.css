@@ -1,4 +1,4 @@
-.bookmark{
+.bookmark, .bookmark2{
     position: absolute;
     top: -1rem;
     right: -0.1rem;
@@ -12,7 +12,7 @@
     filter: opacity(0.5) drop-shadow(0 0 0 red);
 } */
 
-.bookmark .img{
+.bookmark, .bookmark2, .img{
     width: 4vh;
     height: 4vh;
 }
@@ -21,7 +21,7 @@
 }
 
 .bookmark.active img {
-  content: url("../assets/bookmark\ \(1\).png");
+  content: url("../assets/bookmarkActive.png");
 }
 
 .question,.show-answer{
@@ -34,6 +34,7 @@
     padding: 0.5rem;
     font-weight: 600;
     transition: background-color 0.25s ease, box-shadow 0.25 ease;
+    cursor: pointer;
 }
 .show-answer:hover{
     background: #d4af37;

@@ -27,6 +27,36 @@ function hideTagError() {
     error.textContent = "";
 }
 
+function createCard(question, answer, tag){
+    
+    const card = document.createElement("article");
+    card.classList.add("card");
+
+    const newQuestion = document.createElement("h2");
+    newQuestion.textContent = question;
+    
+    const newAnswer = document.createElement("p");
+    newAnswer.textContent = answer;
+    newAnswer.hidden = true;
+
+    const button = document.createElement("button");
+    button.textContent = "Show Answer";
+    button.classList.add("show-answer");
+
+    const tagsContainer = document.createElement("div");
+    tagsContainer.classList.add("tags");
+
+    const newTag = document.createElement("span");
+    newTag.textContent = tag;
+    newTag.classList.add("tag");
+
+    tagsContainer.appendChild(newTag);
+
+    card.append(newQuestion, newAnswer, button, tagsContainer);
+
+    return card;
+}
+
 form.addEventListener("submit", (event) =>{
     event.preventDefault();
 
@@ -41,14 +71,12 @@ form.addEventListener("submit", (event) =>{
     const answer = answerInput.value;
     const tag = tagInput.value;
 
-    console.log(question, answer, tag);
+    const newCard = createCard(question, answer, tag);
+
+    form.insertAdjacentElement("afterend", newCard);
 
     form.reset();
 
     questionCounter.textContent = 150;
     answerCounter.textContent = 150;
 });
-
-
-
-
