@@ -8,13 +8,20 @@
     outline: none;
 }
 
-.bookmark:focus .img{
+/* .bookmark:focus .img{
     filter: opacity(0.5) drop-shadow(0 0 0 red);
-}
+} */
 
 .bookmark .img{
     width: 4vh;
     height: 4vh;
+}
+.bookmark img {
+  content: url("../assets/bookmark.png");
+}
+
+.bookmark.active img {
+  content: url("../assets/bookmark\ \(1\).png");
 }
 
 .question,.show-answer{
