@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizapp</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="index.js" defer></script>
+    <script src="form.js" defer></script>
 </head>
 <body>
+    <header class="app-name">
+    <h1>Create Card</h1>
+   </header>
+   <main>
+    <form data-js="form" class="form">
 
+        <fieldset>
+
+            <legend>Create a new Card</legend>
+
+            <label for ="question">Your Question: </label>
+
+            <textarea data-js="question" name="question" id="question" cols="30" rows="10" maxlength="150"></textarea>
+
+            <p class="counter">
+                <span data-js="question-counter">150</span> characters left
+            </p>
+
+            <label for="answer">Your answer: </label>
+
+            <textarea data-js="answer" name="answer" id="answer" cols="30" rows="10" maxlength="150"></textarea>
+            
+            <p class="counter">
+                <span data-js="answer-counter">150</span> characters left
+            </p>
+            
+            <label for="tag">Tag: </label>
+            
+            <input type="text" id="tag" name="tag"/>
+            
+            <button type="submit" class="submit">Submit</button>
+        
+        </fieldset>
+    </form>
+   </main>
 
     <nav class="navbar">
         <a href="index.html" class="nav-link"><img class="icon" src="assets/home-button.png" alt="Home Button" aria-label="home-button"></a>
