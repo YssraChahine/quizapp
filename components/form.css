@@ -1,0 +1,22 @@
+.form{
+    margin: 100px auto auto auto;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 90px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 10px;
+}
+
+fieldset{
+    display: grid;
+    gap: 5px;
+}
+
+.submit{
+    border: none;
+    background: #d4af37ed;
+    display: block;
+    margin: 1rem auto 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
