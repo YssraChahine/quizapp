@@ -7,16 +7,51 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
    <header class="app-name">
     <h1>Profile</h1>
    </header>
 
+   <main>
 
-    <nav class="navbar">
+    <div class="prof">
+        <img class="profile_img" src="assets/image.png" alt ="" height="200" width="200"/>
+        <h2 class="profile_name">Jane Doe</h2>
+        <h3>About me</h3>
+        <p>This is just a test profile and proper content will be added in the future.</p>
+    </div>
+
+    <section class="profile_stats">
+        <div class="stat">
+            <span class="icon">❓</span>
+            <span class="number">12</span>
+        </div>
+
+        <div class="stat">
+            <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+                    <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z"></path>
+                </svg>
+            </span>
+            <span class="number">4</span>
+        </div>
+    </section>    
+
+    <section class="settings">
+        <h3>Settings</h3>
+        <div class="setting">
+            <span>Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </section>
+   </main>
+   <nav class="navbar">
         <a href="index.html" class="nav-link"><img class="icon" src="assets/home-button.png" alt="Home Button" aria-label="home-button"></a>
         <a href="bookmarks.html" class="nav-link"><img class="icon" src="assets/bookmark.png" alt="Bookmark Button" aria-label="Bookmark Button"></a>
         <a href="profile.html" class="nav-link active"><img class="icon" src="assets/user.png" alt="Profile Button" aria-label="Profile Button"></a>
     </nav>
-   </main>
 </body>
 </html>
