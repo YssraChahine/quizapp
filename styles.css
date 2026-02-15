@@ -15,3 +15,8 @@ body{
     margin: 0;
 
 }
+
+body.dark{
+    background-color: rgb(0, 0, 0);
+    background-image: none;
+}
