@@ -1,4 +1,3 @@
-// Form
 const questionInput = document.querySelector('[data-js="question"]');
 const questionCounter = document.querySelector('[data-js="question-counter"]');
 const form = document.querySelector('[data-js="form"]');
