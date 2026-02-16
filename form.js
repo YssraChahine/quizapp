@@ -1,18 +1,37 @@
+// const questionInput = document.querySelector('[data-js="question"]');
+// const questionCounter = document.querySelector('[data-js="question-counter"]');
+// const form = document.querySelector('[data-js="form"]');
+
+// questionInput.addEventListener("input", (event) =>{
+//     questionCounter.textContent = 150 - event.target.value.length;
+// });
+
+// const answerInput = document.querySelector('[data-js="answer"]');
+// const answerCounter = document.querySelector('[data-js="answer-counter"]');
+// const tagInput = document.querySelector('[data-js="tag"]');
+
+// answerInput.addEventListener("input", (event) =>{
+//     answerCounter.textContent = 150 - event.target.value.length;
+// });
+
+
 const questionInput = document.querySelector('[data-js="question"]');
-const questionCounter = document.querySelector('[data-js="question-counter"]');
-const form = document.querySelector('[data-js="form"]');
-
-questionInput.addEventListener("input", (event) =>{
-    questionCounter.textContent = 150 - event.target.value.length;
-});
-
 const answerInput = document.querySelector('[data-js="answer"]');
+const questionCounter = document.querySelector('[data-js="question-counter"]');
 const answerCounter = document.querySelector('[data-js="answer-counter"]');
+const form = document.querySelector('[data-js="form"]');
 const tagInput = document.querySelector('[data-js="tag"]');
 
-answerInput.addEventListener("input", (event) =>{
-    answerCounter.textContent = 150 - event.target.value.length;
-});
+
+function counter(input, counter){
+  input.addEventListener("input", () => {
+    counter.textContent = 150 - input.value.length;
+  });
+}
+
+counter(questionInput, questionCounter);
+counter(answerInput, answerCounter);
+
 
 const error = document.createElement("p");
 error.style.color = "red";
